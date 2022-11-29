@@ -2,7 +2,7 @@
   "providers": [
     "awscloudformation"
   ],
-  "projectName": "homelistingsdemo",
+  "projectName": "homelistings",
   "version": "3.1",
   "frontend": "javascript",
   "javascript": {

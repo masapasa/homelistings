@@ -4,13 +4,26 @@ type ListingMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
 }
 
-export declare class Listing {
+type EagerListing = {
   readonly id: string;
   readonly address?: string | null;
   readonly price?: number | null;
   readonly description?: string | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
-  constructor(init: ModelInit<Listing, ListingMetaData>);
-  static copyOf(source: Listing, mutator: (draft: MutableModel<Listing, ListingMetaData>) => MutableModel<Listing, ListingMetaData> | void): Listing;
+}
+
+type LazyListing = {
+  readonly id: string;
+  readonly address?: string | null;
+  readonly price?: number | null;
+  readonly description?: string | null;
+  readonly createdAt?: string | null;
+  readonly updatedAt?: string | null;
+}
+
+export declare type Listing = LazyLoading extends LazyLoadingDisabled ? EagerListing : LazyListing
+
+export declare const Listing: (new (init: ModelInit<Listing, ListingMetaData>) => Listing) & {
+  copyOf(source: Listing, mutator: (draft: MutableModel<Listing, ListingMetaData>) => MutableModel<Listing, ListingMetaData> | void): Listing;
 }

@@ -1,4 +1,22 @@
 {
+  "masa": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-homelistingsdemo-masa-112705-authRole",
+      "UnauthRoleArn": "arn:aws:iam::779061781029:role/amplify-homelistingsdemo-masa-112705-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::779061781029:role/amplify-homelistingsdemo-masa-112705-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-homelistingsdemo-masa-112705-deployment",
+      "UnauthRoleName": "amplify-homelistingsdemo-masa-112705-unauthRole",
+      "StackName": "amplify-homelistingsdemo-masa-112705",
+      "StackId": "arn:aws:cloudformation:us-east-1:779061781029:stack/amplify-homelistingsdemo-masa-112705/1ede24b0-5521-11ed-bf18-0a2f46f67125",
+      "AmplifyAppId": "d1taraazdtkfg7"
+    },
+    "categories": {
+      "auth": {
+        "homelistingsdemo": {}
+      }
+    }
+  },
   "staging": {
     "awscloudformation": {
       "AuthRoleName": "amplify-amplify909966e41b204-staging-173753-authRole",
